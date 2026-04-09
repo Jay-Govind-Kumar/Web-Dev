@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        form {
+            background-color: aliceblue;
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        p,
+        input,
+        textarea,
+        button {
+            width: 50%;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Forms</h1>
+
+    <form action="#">
+        <p>Mobile Number :</p>
+        <input type="number" name="mobile_number">
+        <p>Comments :</p>
+        <textarea name="comments" placeholder="write your comments here..."></textarea>
+        <p>Password :</p>
+        <input type="password" name="password" pattern="(?=.*\d)(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
